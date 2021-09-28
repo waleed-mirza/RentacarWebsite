@@ -1,0 +1,29 @@
+/* for making images of equal height and width in items */
+.card-img-top {
+  width: 100% !important;
+  height: 20vw !important;
+  object-fit: cover !important;
+}
+
+@media screen and (max-width: 991px) {
+  .card-img-top {
+    height: 25vw !important;
+  }
+}
+@media screen and (max-width: 800px) {
+  .card-img-top {
+    height: 30vw !important;
+  }
+}
+@media screen and (max-width: 600px) {
+  .card-img-top {
+    height: 35vw !important;
+  }
+}
+@media screen and (max-width: 500px) {
+  .card-img-top {
+    height: 45vw !important;
+  }
+}
+
+/* for making images of equal height and width in items */

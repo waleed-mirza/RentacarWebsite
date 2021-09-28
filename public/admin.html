@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/admin.css">
+    <title>Dawood Travel & Tours</title>
+</head>
+
+<body class="d-nnone">
+    <!-- nav -->
+
+    <div class="container-fluid">
+        <div class="row header d-flex justify-content-between align-items-center">
+            <div
+                class="logo col-lg-4 h-100 d-flex justify-content-lg-start justify-content-md-start align-items-center">
+                <img src="images/logo.png" alt="">
+                <div class="logo-heading">Dawood Travel & Tours</div>
+            </div>
+            <div class="navigation col-lg-8 h-100 w-100 d-flex align-items-center colapsable">
+                <ul class="d-flex justify-content-around align-items-center w-100 mt-2">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <!-- <li><a href="about.html">Contact Us</a></li> -->
+                    <li><a class="logout" href="login.html">Log Out</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="hamburger"></div>
+    </div>
+    <!-- nav -->
+    <h2 class="mt-4 text-center"><b>ADMIN PANEL</b></h2>
+    <div class="container text-center mt-4">
+        <div class="btn btn-dark add-item">Add New Car</div>
+    </div>
+
+
+
+    <!-- New Item Form -->
+    <div class="container d-none item-form">
+        <form class="form-submit" id="formdata" enctype="multipart/form-data" autocomplete="off">
+            <div class="form-group">
+                <label for="inputCar">Car Model:</label>
+                <input type="text" name="model" class="form-control" id="inputCar" placeholder="Enter Car Model">
+            </div>
+            <div class="form-group">
+                <label for="inputCharges">Charges Per Day:</label>
+                <input type="text" name="charges" class="form-control" id="inputCharges" placeholder="Charges">
+            </div>
+            <div class="form-group">
+                <label for="inputFile">Picture of Car:</label>
+                <input type="file" name="files" class="form-control-file" id="inputFile" placeholder="File Upload">
+            </div>
+            <button type="submit" class="btn btn-dark">Submit</button>
+        </form>
+    </div>
+    <!-- New Item Form -->
+
+    <!-- item Section -->
+    <div class="container mt-5">
+        <div id="card-slider" class="splide">
+            <div class="splide__track">
+                <ul class="splide__list" id='inputTarget'>
+                    <!-- <li class="splide__slide">
+                        <div class="d-none id"></div>
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="images/1.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Car Model</h5>
+                                <p class="card-text d-flex justify-content-between">
+                                    <span>Charges per Day</span>
+                                    <span>1200 Rs</span>
+                                </p>
+                                <a href="#" class="btn btn-primary">Delete</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="images/2.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Car Model</h5>
+                                <p class="card-text d-flex justify-content-between">
+                                    <span>Charges per Day</span>
+                                    <span>1200 Rs</span>
+                                </p>
+                                <a href="#" class="btn btn-primary">Delete</a>
+                            </div>
+                        </div>
+                    </li> -->
+                </ul>
+            </div>
+            <div class="splide__progress">
+                <div class="splide__progress__bar">
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- item Section -->
+    <div class="footer mt-5">
+        <ul class="footer-flex d-flex flex-column justify-content-between align-items-center w-100 mt-2 py-4">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <!-- <li><a href="about.html">Contact Us</a></li> -->
+            <li><a class="logout" href="login.html">Log Out</a></li>
+        </ul>
+    </div>
+    <div class="copy-rights d-flex justify-content-center align-items-center py-3">
+        <h6>Dawood Travel & Tours &#9400;Copy Rights</h6>
+    </div>
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="js/admin.js"></script>
+</body>
+
+</html>

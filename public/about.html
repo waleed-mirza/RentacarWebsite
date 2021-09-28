@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/about.css" />
+    <link rel="stylesheet" href="css/login.css">
+    <title>Dawood Travel & Tours
+    </title>
+</head>
+
+<body>
+    <!-- nav -->
+
+    <div class="container-fluid">
+        <div class="row header d-flex justify-content-between align-items-center">
+            <div
+                class="logo col-lg-4 h-100 d-flex justify-content-lg-start justify-content-md-start align-items-center">
+                <img src="images/logo.png" alt="">
+                <div class="logo-heading">Dawood Travel & Tours</div>
+            </div>
+            <div class="navigation col-lg-8 h-100 w-100 d-flex align-items-center colapsable">
+                <ul class="d-flex justify-content-around align-items-center w-100 mt-2">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <!-- <li><a href="about.html">Contact Us</a></li> -->
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="hamburger"></div>
+    </div>
+    <!-- nav -->
+    <div class="aboutus d-flex flex-column justify-content-center align-items-center">
+
+
+
+        <h1 class="mb-5">About Us</h1>
+        <div class="card fadeInDown" style="width: 18rem;">
+            <img class="card-img-top" src="images/1.jpg" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title font-weight-bold">Dawood Travel & Tours</h5>
+                <p class="card-text">Shariq Siddiqui</p>
+                <p class="card-text">+92-3202381855</p>
+                <p class="card-text"><a target="_blank"
+                        class="text-decoration-none font-weight-bold text-underline text-dark"
+                        href="https://www.google.com/maps/place/Hiba+Tower/@31.5072384,74.2792168,15z/data=!4m5!3m4!1s0x0:0xc34d223d5ac912f1!8m2!3d31.5072026!4d74.2792296">
+                        <u>Shop 18 hiba
+                            tower. 1st
+                            floor kareem block
+                            market lahore</u></a></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script>
+        const ham = document
+            .querySelector(".hamburger")
+            .addEventListener("click", (e) => {
+                document.querySelector(".navigation").classList.toggle("colapsable");
+                document.querySelector(".navigation").classList.toggle("uncolapse");
+            });
+
+    </script>
+</body>
+
+</html>
