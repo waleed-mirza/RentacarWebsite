@@ -114,6 +114,7 @@ $(function () {
 
   // deleteItem(24);
 });
+
 function turnOnslider() {
   new Splide("#card-slider", {
     type: "loop",
